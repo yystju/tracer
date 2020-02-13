@@ -9,16 +9,16 @@ import (
 )
 
 var (
-	hello string
+	name string
 )
 
 func init() {
-	flag.StringVar(&hello, "h", "world", "...")
+	flag.StringVar(&name, "n", "world", "...")
 	flag.Parse()
 }
 
 func main() {
-	fmt.Println(hello)
+	fmt.Println(name)
 
 	r := gin.Default()
 
