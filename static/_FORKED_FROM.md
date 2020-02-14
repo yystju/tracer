@@ -1,0 +1,1 @@
+Forked from [CoreUI Free React Admin Template v2](https://github.com/coreui/coreui-free-react-admin-template.git) on Feb 13, 2020

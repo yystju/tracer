@@ -22,15 +22,17 @@ func main() {
 
 	r := gin.Default()
 
-	r.Static("/assets", "./assets")
-	r.StaticFile("/favicon.ico", "./assets/favicon.ico")
-	r.StaticFS("/static", http.Dir("./static/build"))
-
 	r.GET("/api/about", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
 		})
 	})
+
+	r.StaticFile("/favicon.ico", "./static/build/favicon.ico")
+	r.Static("/assets", "./static/build/assets")
+	r.StaticFS("/static", http.Dir("./static/build"))
+
+	r.StaticFS("/learn", http.Dir("./learn/dist"))
 
 	r.RunTLS(":8443", "./cert/server.pem", "./cert/server.key")
 }

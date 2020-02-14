@@ -1,0 +1,8 @@
+.hello {
+    font-size: 20px;
+    color: red;
+    padding-left: 20px;
+    background-image: url('./char.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}

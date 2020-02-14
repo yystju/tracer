@@ -17,3 +17,9 @@
 cert/server.key
 cert/server.pem
 .cache
+
+static/node_modules
+static/build
+
+learn/node_modules
+learn/dist
